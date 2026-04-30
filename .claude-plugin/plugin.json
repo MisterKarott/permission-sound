@@ -1,0 +1,11 @@
+{
+  "name": "permission-sound",
+  "version": "0.1.0",
+  "description": "Play a sound notification when Claude Code needs user permission for a tool call",
+  "author": {
+    "name": "MisterKarott"
+  },
+  "repository": "https://github.com/MisterKarott/permission-sound",
+  "license": "MIT",
+  "keywords": ["sound", "notification", "permission", "accessibility"]
+}
