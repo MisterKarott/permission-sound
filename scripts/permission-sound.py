@@ -9,9 +9,6 @@ import json, subprocess, sys, os, fnmatch
 SOUND = '/System/Library/Sounds/Glass.aiff'
 SETTINGS = os.path.expanduser('~/.claude/settings.json')
 
-# Tools that already have dedicated sound hooks or should be silent
-SKIP = {'AskUserQuestion', 'ask_user'}
-
 
 def main():
     try:
@@ -28,7 +25,7 @@ def main():
         return
 
     tool_name = data.get('tool_name', '')
-    if not tool_name or tool_name in SKIP:
+    if not tool_name:
         return
 
     try:

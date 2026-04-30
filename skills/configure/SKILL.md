@@ -62,3 +62,4 @@ cat "${CLAUDE_PLUGIN_ROOT}/hooks/hooks.json"
 3. It checks the tool against `permissions.allow` in `~/.claude/settings.json`
 4. If the tool is NOT auto-allowed → plays Glass.aiff
 5. If the tool is auto-allowed (Read, Edit, Bash(*), mcp__*, etc.) → silent
+
