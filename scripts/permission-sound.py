@@ -24,6 +24,11 @@ def main():
     except Exception:
         return
 
+    # Ignore les appels d'outils émis par un subagent (Task) : seul le main agent
+    # doit déclencher le son de permission.
+    if data.get('agent_id'):
+        return
+
     tool_name = data.get('tool_name', '')
     if not tool_name:
         return
